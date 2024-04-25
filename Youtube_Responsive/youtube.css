@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #0F0F0F;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.busqueda {
+    display: none;
+}
+
+input {
+    border-radius: 20px 0 0 20px;
+    padding: 5px 10px;
+    width: 150%;
+    outline: none;
+
+}
+
+.input {
+    display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+    .busqueda {
+        display: flex;
+    }
+}
+
