@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    /* height: 110vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "poppins" sans-serif; 
+    background: linear-gradient(to bottom, #f39c12, #000000)
+}
+
+/* Encabezado */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+header {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    background-color: #fff;
+    padding: 10px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.logo-nombre {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    margin-right: 15px;
+    border-radius: 50px;
+    filter: drop-shadow(10px 10px 10px #000000);
+}
+
+nav a {
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    color: red;
+}
+
+@media (min-width:600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Parte principal */
+.action {
+    text-align: center;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px 20px;
+}
+
+.action h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.action p {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff; 
+    background: linear-gradient(to bottom, #f39c12, #000000);
+    border: none;
+    border-radius: 10px;
+    font-family: serif;
+    font-size: 20px;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+button:hover {
+    background: linear-gradient(to bottom,#000000, #f39c12);
+}
+
+/* imagenes (Tattoo) */
+section div {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 500px;
+    margin: 40px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}

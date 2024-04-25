@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins" sans-serif; 
+    background: linear-gradient(to bottom, #f39c12, #000000)
+}
+
+ /* Encabezado */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+header {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    background-color: #fff;
+    padding: 10px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.logo-nombre {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    margin-right: 15px;
+    border-radius: 50px;
+    filter: drop-shadow(10px 10px 10px #000000);
+}
+
+nav a {
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    color: red;
+}
+
+@media (min-width:600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Titulo */
+.titulo { 
+    font-size: 3em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Formulario */
+.container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 5px 20px 50px #fff;
+    margin-bottom: 40px;
+}
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form label {
+    font-size: 3em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin: 15px;
+}
+
+form input {
+    border-radius: 5px;
+    padding: 10px 10px 0px 5px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+
+button {
+    font-size: 1.5em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+
+

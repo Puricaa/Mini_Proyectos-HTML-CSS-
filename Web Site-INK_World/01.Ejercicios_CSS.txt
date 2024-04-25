@@ -1,0 +1,12 @@
+Elabora sitio web que contenga:
+
+3 paginas (inicio, contacto, galeria)
+
+La pagina Inicio debe contener un titulo un boton (Call to action) 
+que redireccione a la galeria.
+
+La pagina de Contacto debe tener un formulario estilizado
+que solicite: nombre, apellido, edad, fecha de nacimiento, correo, clave confirmar clave.
+
+La pagina de Galeria debe contener una cuadricula de 5 columnas con imagenes
+de lo que se trate la pagina (productos, artistas, casas, carros, mascotas, etc...)
