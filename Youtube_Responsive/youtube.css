@@ -2,12 +2,18 @@
     margin: 0;
     padding: 0;
     color: white;
-    background-color: #0F0F0F;
+    background-color: #0f0f0f;
 }
 
+body {
+    height: 100vh;
+}
+
+/* Navegador */
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
 }
 
@@ -18,25 +24,87 @@ nav>div {
     gap: 12px;
 }
 
+/* Menu-Logo */
+.menu-logo {
+    display: flex;
+    align-items: center;
+}
+#menu {
+    padding: 0px 20px 0px 20px;
+    width: 24px;
+}
+
+#logo {
+    width: 40px;
+}
+
+#youtube {
+    padding: 0;
+}
+
+/* Buscador */
 .busqueda {
-    display: none;
+    
 }
 
-input {
-    border-radius: 20px 0 0 20px;
-    padding: 5px 10px;
-    width: 150%;
-    outline: none;
-
-}
-
-.input {
+.barra-nav {
     display: flex;
 }
 
-@media only screen and (min-width: 768px) {
+#input {
+    border-radius: 20px 0 0 20px;
+    padding: 5px 10px;
+    width: 450px;
+    outline: none;
+}
+
+#Button-lupa {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    width: 45px;
+    padding: 10px;
+    background-color: #181818;
+}
+
+#img-lupa {
+    width: 24px;
+    padding: ;
+    background-color: #181818;
+}
+
+#micro {
+    background-color: #181818;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+/* Sección-Notificación */
+.Sección-Notificación {
+    display: flex;
+    gap: 25px;
+}
+
+#video {
+    width: 24px;
+}
+
+#bell {
+    width: 24px;
+}
+
+#A-50 {
+    width: 16px;
+    color: white;
+    background-color: blue;
+    border-radius: 100%;
+    padding: 8%;
+    margin-right: 25px;
+}
+
+/* @media only screen and (min-width: 768px) {
     .busqueda {
         display: flex;
     }
-}
+} */
 
