@@ -102,6 +102,21 @@ nav>div {
     margin-right: 25px;
 }
 
+/* Main */
+
+.main-div-img {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 320px 320px 320px;
+    gap: 20px;
+}
+
+/* .main-div-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 5px;
+} */
 /* @media only screen and (min-width: 768px) {
     .busqueda {
         display: flex;
