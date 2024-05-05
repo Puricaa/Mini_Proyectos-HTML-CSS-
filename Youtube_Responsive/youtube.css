@@ -28,18 +28,21 @@ nav>div {
 .menu-logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
+
 #menu {
-    padding: 0px 20px 0px 20px;
-    width: 24px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#menu:hover {
+    background-color: #181818;
 }
 
 #logo {
     width: 40px;
-}
-
-#youtube {
-    padding: 0;
 }
 
 /* Buscador */
@@ -49,6 +52,7 @@ nav>div {
 
 .barra-nav {
     display: flex;
+    border-color: blue;
 }
 
 #input {
@@ -77,6 +81,7 @@ nav>div {
     background-color: #181818;
     border-radius: 100px;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* Sección-Notificación */
@@ -87,10 +92,22 @@ nav>div {
 
 #video {
     width: 24px;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 10px;
+}
+#video:hover {
+    background-color: #181818;
 }
 
 #bell {
     width: 24px;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 10px;
+}
+#bell:hover {
+    background-color: #181818;
 }
 
 #A-50 {
