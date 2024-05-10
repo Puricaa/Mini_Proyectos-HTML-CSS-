@@ -7,8 +7,8 @@
 }
 
 body {
-    /* height: 100vh;
-    width: 100%; */
+    height: 100vh;
+    width: 100%;
 }
 
 
@@ -164,7 +164,6 @@ li:hover {
 
 
 .sub-contenido-B2 {
-    position: ;
     display: grid;
     width: 0;
     grid-template-columns: 400px 400px 400px 400px;
@@ -197,7 +196,6 @@ li:hover {
         display: grid;
         grid-template-columns: 400px;
     }
-
 }
 
 
