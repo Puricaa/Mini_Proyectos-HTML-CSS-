@@ -106,9 +106,10 @@ svg, img {
 .contenido-A {
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 65px;
     position: fixed;
     margin-top: 68px;
+    margin-left: 5px;
 }
 .icons-A {
     width: 24px;
@@ -152,10 +153,9 @@ ul {
 li {
     background-color: #222222;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
     cursor: pointer;
-    /* text-align: center; */
     display: flex;
 }
 li:hover {
@@ -170,10 +170,7 @@ li:hover {
     grid-template-columns: 400px 400px 400px 400px;
     gap: 30px;
 }
-.img-video {
-    width: 450px;
-    background-color: #da0000;
-}
+
 
 
 
@@ -192,10 +189,15 @@ li:hover {
         display: none;
     }
 
+    ul {
+        display: none;
+    }
+
     .sub-contenido-B2 {
         display: grid;
         grid-template-columns: 400px;
     }
+
 }
 
 
@@ -257,6 +259,7 @@ li:hover {
     }
 }
 
+
   /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .busqueda {
@@ -270,8 +273,12 @@ li:hover {
         display: flex;
     }
 
+    .contenido-B1 {
+        display: flex;
+    }
+
     .sub-contenido-B2 {
         display: grid;
-        grid-template-columns: 400px 400px 400px 400px;
+        grid-template-columns: 400px 400px 400px;
     }
 }
