@@ -16,6 +16,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    position: fixed;
     width: 100%;
     min-height: 55px;
     background-color: blue;
@@ -34,8 +35,8 @@ svg, img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 15px;
+    /* position: relative; */
+    left: 13px;
     gap: 14px;
 }
 #menu {
@@ -91,8 +92,8 @@ input {
 
 .Sección-Notificación {
         display: flex;
-        position: relative;
-        right: 30px;
+        /* position: relative; */
+        right: 3px;
 
 }
 .Sección-Notificación > svg {
@@ -116,6 +117,7 @@ input {
 main {
     display: grid;
     grid-template-columns: 100%;
+    width: 100%;
 }
 
 aside {
@@ -123,13 +125,15 @@ aside {
 }
 
 
-
 .list {
     display: flex;
     align-items: center;
-    position: relative;
-    left: 25px;
+    padding-left: 25px;
+    position: fixed;
+    top: 55px;
+    height: 50px;
     width: 100%;
+    background-color: yellow;
 }
 .list-button {
     display: flex;
@@ -144,7 +148,7 @@ aside {
 }
 .button- {
     border: none;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .button- > svg {
     padding: 6px;
@@ -164,22 +168,21 @@ aside {
 
 
 .videos {
-    display: grid;
-    grid-template-columns: 100%;
-    position: relative;
-    left: 25px;
-    gap: 45px 15px;
-}
-.img-video {
     display: flex;
     flex-direction: column;
-    /* max-width: 400px; */
+    gap: 45px;
+    width: 90%;
+    background-color: red;
+}
+.img-video {
+    display: grid;
+    grid-template-columns: 100%;
+    padding-left: 25px;
     width: 100%;
     gap: 15px;
 }
 .img-video > img {
     width: 100%;
-    /* max-width: 400px; */
 }
 .info {
     display: grid;
@@ -230,13 +233,10 @@ aside {
         display: flex;
         width: 100%;
     }
-    .list-button {
-        display: flex;
-    }
 
     main {
         display: grid;
-        grid-template-columns: 70px auto;
+        grid-template-columns: 65px auto;
     }
     aside {
         display: flex;
@@ -263,9 +263,37 @@ aside {
     }
 }
 
-@media only screen and (min-width:1200px) {
+
+@media only screen and (min-width:700px) {
+
+}
+
+
+@media only screen and (min-width:800px) {
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (min-width:900px) {
     .videos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+
+
+    .butt-2, .butt-3 {
+        display: flex;
+    }
+
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
