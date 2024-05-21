@@ -16,7 +16,6 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    position: fixed;
     width: 100%;
     min-height: 55px;
     background-color: blue;
@@ -35,8 +34,6 @@ svg, img {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
-    left: 13px;
     gap: 14px;
 }
 #menu {
@@ -56,10 +53,11 @@ svg, img {
 .busqueda {
     display: none;
     gap: 20px;
+    width: 50%;
 } 
 .barra-nav {
     display: flex;
-    width: 600px;
+    width: 100%;
 }
 input {
     background-color: #121212;
@@ -92,9 +90,6 @@ input {
 
 .Sección-Notificación {
         display: flex;
-        /* position: relative; */
-        right: 3px;
-
 }
 .Sección-Notificación > svg {
         width: 22px;
@@ -117,20 +112,19 @@ input {
 main {
     display: grid;
     grid-template-columns: 100%;
-    width: 100%;
 }
 
 aside {
     display: none;
 }
 
+section {
+    margin-left: 20px;
+}
 
 .list {
     display: flex;
     align-items: center;
-    padding-left: 25px;
-    position: fixed;
-    top: 55px;
     height: 50px;
     width: 100%;
     background-color: yellow;
@@ -138,17 +132,18 @@ aside {
 .list-button {
     display: flex;
     gap: 14px;
+    width: 100%;
 }
 .list-button > button {
     background-color: #272727;
     border: none;
     border-radius: 10px;
     padding: 8px 14px;
-    font-size: 15px;
+    font-size: 100%;
 }
 .button- {
     border: none;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .button- > svg {
     padding: 6px;
@@ -157,27 +152,23 @@ aside {
 .button- > svg:hover {
     background-color: #272727;
 }
-.butt-2 {
+.butt-2, .butt-3 {
     display: none;
 }
-.butt-3 {
-    display: none;
-}
+
 
 
 
 
 .videos {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-    width: 90%;
+    display: grid;
+    gap: 45px 10px;
+    width: 100%;
     background-color: red;
 }
 .img-video {
     display: grid;
-    grid-template-columns: 100%;
-    padding-left: 25px;
+    grid-template-columns: 100%;  
     width: 100%;
     gap: 15px;
 }
@@ -237,6 +228,7 @@ aside {
     main {
         display: grid;
         grid-template-columns: 65px auto;
+        margin: 0;
     }
     aside {
         display: flex;
@@ -286,7 +278,16 @@ aside {
 
 
 @media only screen and (min-width:1200px) {
+    main {
+        display: grid;
+        grid-template-columns: 65px auto;
+        margin: 0;
+    }
 
+    .list {
+        display: flex;
+        /* padding-left: 25px; */
+    }
 
     .butt-2, .butt-3 {
         display: flex;
