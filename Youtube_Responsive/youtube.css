@@ -19,6 +19,7 @@ nav {
     width: 100%;
     min-height: 55px;
     background-color: blue;
+    right: 15px;
 }
 nav>div {
     display: flex;
@@ -35,6 +36,8 @@ svg, img {
     justify-content: center;
     align-items: center;
     gap: 14px;
+    position: relative;
+    left: 13px;
 }
 #menu {
     border-radius: 100%;
@@ -90,6 +93,8 @@ input {
 
 .Sección-Notificación {
         display: flex;
+        position: relative;
+        right: 15px;
 }
 .Sección-Notificación > svg {
         width: 22px;
@@ -104,7 +109,7 @@ input {
     padding: 10px;
     border-radius: 100%;
     margin-left: 15px;
-    background-color: #AA47BC;
+    background-color: blue;
 }
 
 
@@ -116,10 +121,27 @@ main {
 
 aside {
     display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    gap: 16px;
+    background-color: beige;
+}
+
+aside > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 10px;
 }
 
 section {
-    margin-left: 20px;
+    margin-left: 35px;
+    margin-right: 15px;
 }
 
 .list {
@@ -131,7 +153,7 @@ section {
 }
 .list-button {
     display: flex;
-    gap: 14px;
+    gap: 10px;
     width: 100%;
 }
 .list-button > button {
@@ -143,7 +165,7 @@ section {
 }
 .button- {
     border: none;
-    margin-left: 15px;
+    margin-left: 1px;
 }
 .button- > svg {
     padding: 6px;
@@ -152,7 +174,7 @@ section {
 .button- > svg:hover {
     background-color: #272727;
 }
-.butt-2, .butt-3 {
+.butt-5, .butt-6, .butt-7, .butt-8, .butt-9, .butt-10, .butt-11, .butt-12 {
     display: none;
 }
 
@@ -230,24 +252,11 @@ section {
         grid-template-columns: 65px auto;
         margin: 0;
     }
+
     aside {
         display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        text-align: center;
-        gap: 16px;
-        background-color: beige;
     }
-
-    aside > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-        font-size: 10px;
-    }
+ 
 
     .videos {
         display: grid;
@@ -276,6 +285,17 @@ section {
     }
 }
 
+@media only screen and (min-width:1000px) {
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .butt-5, .butt-6, .butt-7, .butt-8, .butt-9 {
+        display: flex;
+    }
+    
+}
 
 @media only screen and (min-width:1200px) {
     main {
@@ -289,7 +309,23 @@ section {
         /* padding-left: 25px; */
     }
 
-    .butt-2, .butt-3 {
+    .butt-5, .butt-6, .butt-7, .butt-8, .butt-9, .butt-10 {
+        display: flex;
+    }
+
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    .list-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .butt-5, .butt-6, .butt-7, .butt-8, .butt-9, .butt-10, .butt-11, .butt-12 {
         display: flex;
     }
 
