@@ -33,12 +33,14 @@ svg, img {
 .menu-logo {
     display: flex;
     justify-content: center;
-    padding-left: 14px;
-    gap: 18px;
+    align-items: center;
+    position: relative;
+    left: 15px;
+    gap: 14px;
 }
 #menu {
     border-radius: 100%;
-    padding: 10px;
+    padding: 8px;
     width: 24px;
 }
 #menu:hover {
@@ -89,19 +91,23 @@ input {
 
 .Sección-Notificación {
         display: flex;
-        margin-right: 0px;
+        position: relative;
+        right: 30px;
+
 }
-.icons-3 {
-        width: 23px;
+.Sección-Notificación > svg {
+        width: 22px;
         border-radius: 100px;
         padding: 8px;
 }
-.icons-3:hover {
+.Sección-Notificación > svg:hover {
         background-color: #272727;
 }
-#letra-A {
-    width: 14px;
-    margin: 0px 10 0px 20px;
+.Sección-Notificación > div > img {
+    width: 18px;
+    padding: 10px;
+    border-radius: 100%;
+    margin-left: 15px;
     background-color: #AA47BC;
 }
 
@@ -121,15 +127,13 @@ aside {
 .list {
     display: flex;
     align-items: center;
+    position: relative;
+    left: 25px;
     width: 100%;
 }
 .list-button {
     display: flex;
-    padding-left: 32px;
     gap: 14px;
-}
-.button-one {
-    display: flex;
 }
 .list-button > button {
     background-color: #272727;
@@ -140,6 +144,7 @@ aside {
 }
 .button- {
     border: none;
+    margin-left: 30px;
 }
 .button- > svg {
     padding: 6px;
@@ -148,6 +153,12 @@ aside {
 .button- > svg:hover {
     background-color: #272727;
 }
+.butt-2 {
+    display: none;
+}
+.butt-3 {
+    display: none;
+}
 
 
 
@@ -155,8 +166,9 @@ aside {
 .videos {
     display: grid;
     grid-template-columns: 100%;
-    padding: 8px 32px;
-    gap: 35px 15px;
+    position: relative;
+    left: 25px;
+    gap: 45px 15px;
 }
 .img-video {
     display: flex;
@@ -205,7 +217,7 @@ aside {
 
 
 
-@media only screen and (min-width:650px){
+@media only screen and (min-width:600px){
     .busqueda {
         display: flex;
     }
@@ -233,6 +245,7 @@ aside {
         align-items: center;
         text-align: center;
         gap: 16px;
+        background-color: beige;
     }
 
     aside > div {
@@ -241,7 +254,7 @@ aside {
         justify-content: center;
         align-items: center;
         gap: 6px;
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .videos {
