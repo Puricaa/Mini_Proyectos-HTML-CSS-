@@ -12,13 +12,25 @@ body {
 }
 
 
+nav {
+     background-color: blue;
+}
+aside {
+    background-color: beige;
+}
+.list{
+    background-color: yellow;
+}
+.videos {
+    background-color: red;
+}
+
 
 nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
     min-height: 55px;
-    background-color: blue;
     right: 15px;
 }
 nav>div {
@@ -127,7 +139,6 @@ aside {
     text-align: center;
     padding-top: 25px;
     gap: 16px;
-    background-color: beige;
 }
 
 aside > div {
@@ -149,7 +160,6 @@ section {
     align-items: center;
     height: 50px;
     width: 100%;
-    background-color: yellow;
 }
 .list-button {
     display: flex;
@@ -186,7 +196,6 @@ section {
     display: grid;
     gap: 45px 10px;
     width: 100%;
-    background-color: red;
 }
 .img-video {
     display: grid;
